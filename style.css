@@ -1,0 +1,281 @@
+/* General reset and font styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff; /* background color for navbar */
+    color: black; /* text color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    color: black;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.navbar nav a:hover {
+    background-color: #ab6c28; /* Slightly lighter background on hover */
+    color: white; /* Lighter text color on hover */
+}
+
+/* Responsive Design for Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Hero section styling */
+.hero {
+    background-color: #ae9355;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 300px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-text h4 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #a96513;
+}
+
+/* About section styling */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Featured section styling */
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.feature-item {
+    max-width: 300px;
+    text-align: center;
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.feature-item .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.feature-item .btn:hover {
+    background-color: #555;
+}
+
+/* biodata section*/
+.biodata {
+    background-color: #ae9355;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 30px;
+}
+
+.biodata-text{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: beige;
+}
+td {
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    width: 30%;
+}
+
+img {
+    max-width: 150px;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px; 
+}
+
+/* hobbies image styling*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 2000px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background: #ae9355;
+    padding: 30px;
+}
+
+.container h1{
+        font-weight: normal;
+        font-size: 2.5em;
+        margin: 20px 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+h1 {
+    font-weight: normal;
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.blog-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 1200px;
+}
+
+.blog-card {
+    background-color: beige;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-card-content {
+    padding: 20px;
+}
+
+.blog-card-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.blog-card-subtitle {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* campus life section */
+.campus-life-section {
+    text-align: center;
+    padding: 20px;
+    background: #ae9355;
+}
+
+video {
+    width: 20%; 
+    height: auto; 
+}
+
+.video-container {
+    margin: 20px auto;
+}
+
+/* Footer styling */
+footer {
+    color:black;
+    text-align: center;
+    padding: 20px 0;
+}
